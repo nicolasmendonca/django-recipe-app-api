@@ -12,3 +12,9 @@ docker-compose build
 ```bash
 docker-compose run app sh -c "python manage.py whatever"
 ```
+
+## Run Unit Tests
+
+```bash
+docker-compose run app sh -c "python manage.py test"
+```
