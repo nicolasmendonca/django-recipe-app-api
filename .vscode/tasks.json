@@ -4,12 +4,21 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "tests",
+            "label": "01_test",
             "type": "shell",
             "command": "docker-compose run app sh -c \"python manage.py test\" && flake8",
             "group": "test",
             "presentation": {
               "reveal": "always",
+              "panel": "new"
+            }
+        },
+        {
+            "label": "02_start",
+            "type": "shell",
+            "command": "docker-compose up",
+            "presentation": {
+              "reveal": "never",
               "panel": "new"
             }
         }
