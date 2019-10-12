@@ -18,3 +18,9 @@ docker-compose run app sh -c "python manage.py whatever"
 ```bash
 docker-compose run app sh -c "python manage.py test"
 ```
+
+## Start server
+
+```bash
+docker-compose up
+```
