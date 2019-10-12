@@ -13,4 +13,3 @@ class Command(BaseCommand):
                 db_conn = connections['default']
             except OperationalError:
                 time.sleep(1)
-
