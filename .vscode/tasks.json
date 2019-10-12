@@ -6,7 +6,7 @@
         {
             "label": "01_test",
             "type": "shell",
-            "command": "docker-compose run app sh -c \"python manage.py test\" && flake8",
+            "command": "docker-compose run --rm app sh -c \"python manage.py test\" && flake8",
             "group": "test",
             "presentation": {
               "reveal": "always",
