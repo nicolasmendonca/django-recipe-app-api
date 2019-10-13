@@ -21,6 +21,15 @@
               "reveal": "never",
               "panel": "new"
             }
-        }
+        },
+        {
+            "label": "03_migrate",
+            "type": "shell",
+            "command": "docker-compose run --rm app sh -c \"python manage.py makemigrations\" && docker-compose run --rm app sh -c \"python manage.py migrate\"",
+            "presentation": {
+              "reveal": "always",
+              "panel": "new"
+            }
+        },
     ]
 }
